@@ -1,36 +1,28 @@
-const passwordInputOne = document.querySelector('input[id="password"]');
-const passwordInputTwo = document.querySelector('input[id="confirm-password"]');
 
-passwordInputOne.addEventListener('input', function(event) {
-    if (this.value == passwordInputTwo.value && this.value != '')
+const passwordInputs = document.querySelectorAll('input[type="password"]');
+
+passwordInputs.forEach(input => input.addEventListener('input', matchPasswords));
+
+
+
+
+function matchPasswords()
+{
+
+ 
+    if (passwordInputs[0].value == passwordInputs[1].value && passwordInputs[0].value != '')
     {
-        passwordInputOne.classList.remove('error');
-        passwordInputTwo.classList.remove('error');
-
+        passwordInputs[0].classList.remove('error');
+        passwordInputs[1].classList.remove('error');
     }
+
     else{
-        passwordInputOne.classList.add('error');
-        passwordInputTwo.classList.add('error');
+        passwordInputs[0].classList.add('error');
+        passwordInputs[1].classList.add('error');
     }
-
-    
-});
+}
 
 
-passwordInputTwo.addEventListener('input', function(event) {
-    if (this.value == passwordInputOne.value && this.value != '')
-    {
-        passwordInputOne.classList.remove('error');
-        passwordInputTwo.classList.remove('error');
-
-    }
-    else{
-        passwordInputOne.classList.add('error');
-        passwordInputTwo.classList.add('error');
-    }
-
-    
-});
 
 
 
