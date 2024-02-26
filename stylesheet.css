@@ -124,12 +124,36 @@
 
     .right-bottom-panel{
      
-        background-color: red;
+        height: 100px;
     }
     button{
-        background-color: rgb(225, 128, 255);
+        font-family: Roboto-Light;
+        background-color: #CE7ABE;
+        border: none;
+        height: 40px;
+        width: 200px;
+        position: relative;
+        top: 20px;
+        left: 28px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        box-shadow: 0px 5px 5px -5px black;
+        
     }
 
+    a{
+        color: #CE7ABE;
+    }
+    p{
+        margin-top: 35px;
+        margin-left: 28px;
+    }
+    input:invalid{
+        border: 1px solid red;
+    }
+    
 
 
 
