@@ -1,3 +1,46 @@
-h1{
-    color: red;
+/*{
+    outline: 2px solid red;
+}*/
+
+@font-face{
+    font-family: Norse-Bold;
+    src:url(/assets/Norse-Bold.otf);
+
 }
+
+body{
+  
+   display: flex;
+   height: 100vh;
+   margin: 0;
+}
+.left-panel{
+    background: url(assets/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+    background-size: cover;
+    flex: 0.7;
+    font-family: Norse-Bold;
+    font-size: 5rem;
+}
+.left-panel img{
+    width: 7rem;
+}
+.logo-banner{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 25%;
+    margin-top: 100px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.odin-text{
+    position: relative;
+    right: 15px;
+}
+.right-panel{
+    flex: 1;
+}
+
+
