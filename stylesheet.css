@@ -36,13 +36,14 @@
     }
     .logo-banner{
         background-color: rgba(0, 0, 0, 0.5);
-        height: 200px;
-        margin-top: 100px;
+        height: 170px;
+        margin-top: 60px;
         display: flex;
         gap: 10px;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: white;   
+
         
     }
     .odin-text{
@@ -52,8 +53,7 @@
     .right-panel{
         flex: 1;
         font-family: Roboto;
-        display: flex;
-        flex-direction: column;
+
     }
 
 
@@ -62,16 +62,17 @@
         font-size: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        padding: 30px;
+        justify-content: flex-end;
+        padding-left: 30px;
         background-color: rgb(247, 247, 247);
-        height: 300px;
+        height: 230px;
         text-wrap: balance;
     }
 
     .right-center-panel{
         padding: 30px;
         box-shadow: 0px 5px 5px -5px black;
+    
     }
     .right-center-panel legend{
         font-size: 20px;
@@ -119,6 +120,14 @@
         content: "* Passwords do not match";
         font-family: Roboto-Light;
         color: red;
+    }
+
+    .right-bottom-panel{
+     
+        background-color: red;
+    }
+    button{
+        background-color: rgb(225, 128, 255);
     }
 
 
