@@ -30,6 +30,7 @@
         flex: 0.7;
         font-family: Norse-Bold;
         font-size: 5rem;
+
     }
     .left-panel img{
         width: 7rem;
@@ -153,7 +154,16 @@
     input:invalid{
         border: 1px solid red;
     }
-    
+
+    .credit{
+        font-family:Roboto-Light;
+        color: white;
+        font-size: 15px;
+        margin-top: 400px;
+        text-align: center;
+        margin-right: 25px;
+    }
+     
 
 
 
